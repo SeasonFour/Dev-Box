@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from config import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -39,18 +40,27 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'DevBoxLogin',
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.github',
+    'social.apps.django_app.default',
 )
 
 AUTHENTICATION_BACKENDS = (
+     'social.backends.github.GithubOAuth2',
      'django.contrib.auth.backends.ModelBackend',
-     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 1
+PIPELINE = (
+  'social.pipeline.social_auth.social_details',
+  'social.pipeline.social_auth.social_uid',
+  'social.pipeline.social_auth.auth_allowed',
+  'social.pipeline.social_auth.social_user',
+  'social.pipeline.user.get_username',
+  'social.pipeline.mail.mail_validation',
+  'social.pipeline.social_auth.associate_by_email',
+  'social.pipeline.user.create_user',
+  'social.pipeline.social_auth.associate_user',
+  'social.pipeline.social_auth.load_extra_data',
+  'social.pipeline.user.user_details'
+)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

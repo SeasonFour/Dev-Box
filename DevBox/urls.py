@@ -19,7 +19,9 @@ from django.contrib import admin
 import allauth
 admin.autodiscover()
 urlpatterns = [
-     url(r'^accounts/', include('allauth.urls')),
+    url('', include('social.apps.django_app.urls', namespace='social')),
+    url(r'^$','DevBoxLogin.views.login'),
+    url(r'^home/$','DevBoxLogin.views.home'),
+    url(r'^logout/$','DevBoxLogin.views.logout'),
     url(r'^admin/', include(admin.site.urls)),
-
 ]

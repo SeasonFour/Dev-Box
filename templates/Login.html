@@ -1,5 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <p>Home</p>
+    {% if user and not user.is_anonymous %}
+        <a>Hello, {{ user.get_full_name }}!</a>
+        <h5>{{ user.email }}</h5>
+        <br>
+        <a href="/logout">Logout</a>
+    {% else %}
+        <a href="{% url 'social:begin' 'github' %}?next={{ request.path }}">Login with Github</a>
+    {% endif %}
 {% endblock %}
