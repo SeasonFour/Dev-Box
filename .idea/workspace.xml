@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f5fe34-7016-4118-9cb5-62b77ecf80fa" name="Default" comment="added bower components&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="87f5fe34-7016-4118-9cb5-62b77ecf80fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DevBox.iws" />
@@ -617,7 +616,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448900108433</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed to python social auth&#10;">
+      <created>1448900148962</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1448900148962</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -660,7 +665,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added assets files" />
     <MESSAGE value="added bower components&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bower components&#10;" />
+    <MESSAGE value="changed to python social auth&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to python social auth&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
