@@ -1,2 +1,5 @@
-.idea
+/.idea
 db.sqlite3
+config.py
+/__pycache__/
+/migrations/
