@@ -39,7 +39,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'DevBoxLogin',
-    'django.contrib.sites',
     'social.apps.django_app.default',
 )
 
@@ -48,19 +47,30 @@ AUTHENTICATION_BACKENDS = (
      'django.contrib.auth.backends.ModelBackend',
 )
 
-PIPELINE = (
-  'social.pipeline.social_auth.social_details',
-  'social.pipeline.social_auth.social_uid',
-  'social.pipeline.social_auth.auth_allowed',
-  'social.pipeline.social_auth.social_user',
-  'social.pipeline.user.get_username',
-  'social.pipeline.mail.mail_validation',
-  'social.pipeline.social_auth.associate_by_email',
-  'social.pipeline.user.create_user',
-  'social.pipeline.social_auth.associate_user',
-  'social.pipeline.social_auth.load_extra_data',
-  'social.pipeline.user.user_details'
+SOCIAL_AUTH_GITHUB_FORCE_EMAIL_VALIDATION = True
+
+SOCIAL_AUTH_PIPELINE = (
+    'social.pipeline.social_auth.social_details',
+    'social.pipeline.social_auth.social_uid',
+    'social.pipeline.social_auth.auth_allowed',
+    'social.pipeline.social_auth.social_user',
+    'social.pipeline.user.get_username',
+    'social.pipeline.social_auth.associate_by_email',
+    'social.pipeline.user.create_user',
+    'social.pipeline.social_auth.associate_user',
+    'social.pipeline.social_auth.load_extra_data',
+    'social.pipeline.user.user_details',
+    #'projects.pipeline.save_profile_picture'
 )
+
+SOCIAL_AUTH_DISCONNECT_PIPELINE = (
+    'social.pipeline.disconnect.allowed_to_disconnect',
+    'social.pipeline.disconnect.get_entries',
+    'social.pipeline.disconnect.revoke_tokens',
+    'social.pipeline.disconnect.disconnect'
+)
+
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -88,6 +98,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
+                'social.apps.django_app.context_processors.backends',
+                'social.apps.django_app.context_processors.login_redirect',
             ],
         },
     },
