@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+import Register_Developer
 
 import allauth
 admin.autodiscover()
 urlpatterns = [
 
-    url('', include('social.apps.django_app.urls', namespace='social')),
-    url(r'^$','DevBoxLogin.views.login'),
-    url(r'^home/$','DevBoxLogin.views.home'),
-    url(r'^logout/$','DevBoxLogin.views.logout'),
+    url('',include('social.apps.django_app.urls', namespace='social')),
+    url(r'^',include('DevBoxLogin.urls')),
+    url(r'^profile/',include('Register_Developer.urls')),
     url(r'^admin/', include(admin.site.urls)),
 
 ]

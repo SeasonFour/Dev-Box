@@ -39,8 +39,14 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'DevBoxLogin',
+    'Register_Developer',
     'social.apps.django_app.default',
+    'crispy_forms',
+    'crispy_forms_foundation',
 )
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = ('uni_form', 'foundation-5')
+CRISPY_TEMPLATE_PACK = 'foundation-5'
 
 AUTHENTICATION_BACKENDS = (
      'social.backends.github.GithubOAuth2',
@@ -60,7 +66,6 @@ SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.social_auth.associate_user',
     'social.pipeline.social_auth.load_extra_data',
     'social.pipeline.user.user_details',
-    #'projects.pipeline.save_profile_picture'
 )
 
 SOCIAL_AUTH_DISCONNECT_PIPELINE = (
@@ -69,7 +74,6 @@ SOCIAL_AUTH_DISCONNECT_PIPELINE = (
     'social.pipeline.disconnect.revoke_tokens',
     'social.pipeline.disconnect.disconnect'
 )
-
 
 
 MIDDLEWARE_CLASSES = (
