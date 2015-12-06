@@ -19,7 +19,7 @@ class Developer(models.Model):
     bio = models.TextField(max_length=500)
     profile_picture = models.ImageField(blank=True)
     website_url = models.URLField(null=True)
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now=True)
     date_updated = models.DateTimeField(auto_now=True)
     languages = models.ManyToManyField(Language,blank=True)
 
@@ -29,10 +29,12 @@ class Developer(models.Model):
 
 class Portfolio(models.Model):
     title = models.CharField(max_length=50,blank=False)
-    image = models.ImageField()
+    image = models.ImageField(blank=True)
     description = models.TextField()
     github_link = models.URLField()
     owner = models.ForeignKey(Developer)
+    date_created = models.DateTimeField(auto_now=True)
+    date_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title
