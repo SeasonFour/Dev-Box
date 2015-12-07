@@ -1,16 +1,6 @@
 from django.db import models
-
+from django.core.validators import MinValueValidator,MaxValueValidator
 # Create your models here.
-class Language(models.Model):
-    name = models.CharField(max_length=30)
-    class Meta:
-        verbose_name = "name"
-        verbose_name_plural = "names"
-        ordering = ["name"]
-
-    def __str__(self):
-        return self.name
-
 
 class Developer(models.Model):
     first_name = models.CharField(max_length=50,blank=False)
@@ -19,9 +9,13 @@ class Developer(models.Model):
     bio = models.TextField(max_length=500)
     profile_picture = models.ImageField(blank=True)
     website_url = models.URLField(null=True)
+    years_exp = models.IntegerField(blank=True,default=1,validators=[MinValueValidator(0),
+                                                                     MaxValueValidator(50)])
+    software_title = models.CharField(blank=True,default="Back-End",max_length=50)
+    languages = models.CharField(max_length=1000,blank=True)
     date_created = models.DateTimeField(auto_now=True)
     date_updated = models.DateTimeField(auto_now=True)
-    languages = models.ManyToManyField(Language,blank=True)
+
 
     def __str__(self):
         return "{}'{} {}".format(self.first_name,'s','Details')

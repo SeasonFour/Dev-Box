@@ -29,9 +29,9 @@ def new_portfolio(request):
 
 @login_required(login_url='/')
 def create_profile(request):
-    dev_profile = Developer.objects.get(id=request.user._get_pk_val)
-    profile_form = ProfileForm(request.POST or None,instance=dev_profile)
     if request.method == 'POST':
+        dev_profile = Developer.objects.get(id=request.user._get_pk_val)
+        profile_form = ProfileForm(request.POST or None,instance=dev_profile)
         if profile_form.is_valid():
            profile_form.save()
            return redirect('/profile/me/')
@@ -41,9 +41,8 @@ def create_profile(request):
 @login_required(login_url='/')
 def create_portfolio(request):
      # dev = Developer.objects.get(pk=request.user._get_pk_val)
-
      if request.method == 'POST':
-         portfolio_form = PortfolioForm(request.POST)
+         portfolio_form = PortfolioForm(request.POST,request.FILES)
          if portfolio_form.is_valid():
              portfolio = portfolio_form.save(commit=False)
              portfolio.owner_id = request.user.id

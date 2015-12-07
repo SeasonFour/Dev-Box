@@ -9,7 +9,7 @@ class ProfileForm(ModelForm):
 
     class Meta:
         model = Developer
-        exclude = ('date_created', 'date_updated', 'languages')
+        exclude = ('date_created', 'date_updated')
 
     def __init__(self, *args, **kwargs):
         # Init layout form with crispy
@@ -24,6 +24,9 @@ class ProfileForm(ModelForm):
             Field('last_name'),
             Field('email_address'),
             Field('bio',css_class='text_area'),
+            Field('languages'),
+            Field('software_title'),
+            Field('years_exp'),
             Field('profile_picture'),
             Field('website_url'),
 

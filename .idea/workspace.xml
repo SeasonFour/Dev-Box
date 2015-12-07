@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f5fe34-7016-4118-9cb5-62b77ecf80fa" name="Default" comment="added developer model&#10;&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dev/icons16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dev/icons32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/hidpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/hidpi/lock-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/hidpi/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/hidpi/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/lock-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/images/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Developer/templates/register_portfolio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dev/icons16.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dev/icons32.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dev/locations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dialog_ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dialog_ie7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dialog_ie8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/dialog_iequirks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/editor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/editor_gecko.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/editor_ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/editor_ie7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/editor_ie8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/editor_iequirks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ckeditor/skins/flat/skin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/foundation.css" />
+    <list default="true" id="87f5fe34-7016-4118-9cb5-62b77ecf80fa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Employer/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Employer/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Employer/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Employer/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Employer/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register_Employer/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register_Developer/admin.py" afterPath="$PROJECT_DIR$/Register_Developer/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register_Developer/forms.py" afterPath="$PROJECT_DIR$/Register_Developer/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register_Developer/models.py" afterPath="$PROJECT_DIR$/Register_Developer/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register_Developer/templates/register.html" afterPath="$PROJECT_DIR$/Register_Developer/templates/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register_Developer/urls.py" afterPath="$PROJECT_DIR$/Register_Developer/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register_Developer/views.py" afterPath="$PROJECT_DIR$/Register_Developer/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/assets/bower_components/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Layout.html" afterPath="$PROJECT_DIR$/templates/Layout.html" />
     </list>
     <ignored path="DevBox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -127,8 +99,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Register_Developer/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.827586">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -136,7 +108,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register_Developer_portfolio" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Register_Developer_developer" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/9b9b1495/de57b3b7-e36d-45a7-974b-710ae7920c5e/Register_Developer_developer">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register_Developer_portfolio" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/9b9b1495/de57b3b7-e36d-45a7-974b-710ae7920c5e/Register_Developer_portfolio">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -154,28 +141,8 @@
       <file leaf-file-name="foundation.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/foundation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4193548">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DevBox/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -197,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/Register_Developer/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -205,21 +172,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DevBoxLogin/urls.py">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Register_Developer/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Register_Developer/templates/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Layout.html">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Register_Developer/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2258065">
-              <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -229,8 +208,10 @@
         <entry file="file://$PROJECT_DIR$/Register_Developer/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-              <folding />
+              <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -242,8 +223,8 @@
       <list>
         <option value="CSS File" />
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -256,7 +237,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/DevBoxLogin/models.py" />
         <option value="$PROJECT_DIR$/DevBoxLogin/admin.py" />
-        <option value="$PROJECT_DIR$/Register_Developer/admin.py" />
         <option value="$PROJECT_DIR$/DevBoxLogin/login_methods.py" />
         <option value="$PROJECT_DIR$/templates/Login.html" />
         <option value="$PROJECT_DIR$/templates/Home.html" />
@@ -275,11 +255,13 @@
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/Register_Developer/templates/register_portfolio.html" />
         <option value="$PROJECT_DIR$/Register_Developer/templates/register.html" />
-        <option value="$PROJECT_DIR$/Register_Developer/forms.py" />
         <option value="$PROJECT_DIR$/Register_Developer/urls.py" />
         <option value="$PROJECT_DIR$/templates/Layout.html" />
-        <option value="$PROJECT_DIR$/Register_Developer/models.py" />
+        <option value="$PROJECT_DIR$/Register_Developer/templates/languages.html" />
         <option value="$PROJECT_DIR$/Register_Developer/views.py" />
+        <option value="$PROJECT_DIR$/Register_Developer/forms.py" />
+        <option value="$PROJECT_DIR$/Register_Developer/admin.py" />
+        <option value="$PROJECT_DIR$/Register_Developer/models.py" />
       </list>
     </option>
   </component>
@@ -321,7 +303,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -425,6 +407,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -439,7 +422,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -782,7 +764,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449242453831</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="portfolio form iteration1 working&#10;&#10;">
+      <created>1449430801688</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1449430801688</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -798,16 +786,15 @@
     <frame x="-8" y="-8" width="1370" height="754" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13053435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14427482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.49389312" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3478261" sideWeight="0.35877863" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.101526715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33816424" sideWeight="0.8068702" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14274809" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.49694657" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30756843" sideWeight="0.4908397" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3478261" sideWeight="0.64122134" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268921" sideWeight="0.64122134" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2705314" sideWeight="0.48167938" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2689211" sideWeight="0.48167938" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -816,6 +803,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33816424" sideWeight="0.8068702" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -837,7 +825,8 @@
     <MESSAGE value="added developer registration app&#10;&#10;" />
     <MESSAGE value="added developer model&#10;&#10;" />
     <MESSAGE value="developer registration for iteration1 is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="developer registration for iteration1 is working" />
+    <MESSAGE value="portfolio form iteration1 working&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio form iteration1 working&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -849,8 +838,46 @@
     <entry file="file://$PROJECT_DIR$/Register_Developer/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DevBoxLogin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register_Developer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register_Developer/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -866,9 +893,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="e#615#656#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +901,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -901,7 +928,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.1290324">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,44 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register_Developer/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9b9b1495/de57b3b7-e36d-45a7-974b-710ae7920c5e/Register_Developer_developer">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register_Developer/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.354838">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register_Developer/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,7 +1128,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2258065">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
           <folding />
         </state>
@@ -1155,7 +1144,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4193548">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
@@ -1165,24 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register_Developer/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register_Developer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1197,17 +1168,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/9b9b1495/de57b3b7-e36d-45a7-974b-710ae7920c5e/Register_Developer_portfolio">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register_Developer/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register_Developer/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register_Developer/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Register_Developer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.827586">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/9b9b1495/de57b3b7-e36d-45a7-974b-710ae7920c5e/Register_Developer_portfolio">
+    <entry file="file://$PROJECT_DIR$/Register_Developer/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register_Developer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9b9b1495/de57b3b7-e36d-45a7-974b-710ae7920c5e/Register_Developer_developer">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
