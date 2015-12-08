@@ -1,6 +1,6 @@
 /.idea
 db.sqlite3
-config.py
+shared/config.py
 /__pycache__/
 /migrations/
 ig.jpg

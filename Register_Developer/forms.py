@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 from crispy_forms_foundation.forms import *
-from crispy_forms_foundation.layout import Layout,Field, Fieldset, Reset,SplitDateTimeField, Row, Column, ButtonHolder, Submit
+from crispy_forms_foundation.layout import Layout,Field, Fieldset,Reset,SplitDateTimeField, Row, Column, ButtonHolder, Submit
 from .models import Developer,Portfolio
 from django.utils.translation import ugettext as _
 
@@ -20,15 +20,15 @@ class ProfileForm(ModelForm):
         self.helper.form_show_labels = True
         self.helper.layout = Layout(
 
-            Field('first_name'),
-            Field('last_name'),
-            Field('email_address'),
-            Field('bio',css_class='text_area'),
-            Field('languages'),
-            Field('software_title'),
+            Field('first_name',placeholder="enter your first name here"),
+            Field('last_name',placeholder="enter your last name here"),
+            Field('email_address',placeholder="enter your email here"),
+            Field('bio',css_class='text_area',placeholder="e.g what you do & are as an engineer"),
+            Field('languages',placeholder="separate with commas e.g. html,css,javascript,python,django"),
+            Field('software_title',placeholder="software engineering title e.g backend-engineer"),
             Field('years_exp'),
-            Field('profile_picture'),
-            Field('website_url'),
+            Field('profile_picture',placeholder="a url for you profile picture"),
+            Field('website_url',placeholder="a url to your website"),
 
             ButtonHolder(
                 Submit('submit', _('Register'),css_class='save_btn'),
