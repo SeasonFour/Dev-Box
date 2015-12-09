@@ -2,8 +2,9 @@ from django.db import models
 from shared.DevBoxUser import DevBoxUser,DevBoxCreatedAt
 # Create your models here.
 class Employer(DevBoxUser):
-    company_name = models.CharField(max_length=50,blank=False)
-    location = models.CharField(max_length=50,blank=False)
+    company_name = models.CharField(max_length=50,blank=True)
+    location = models.CharField(max_length=50,blank=True)
+    is_confirmed = models.BooleanField(default=False)
 
 class JobPost(DevBoxCreatedAt):
     title = models.CharField(max_length=50,blank=False)
