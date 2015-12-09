@@ -8,3 +8,9 @@ class DevBoxUser(models.Model):
     date_updated = models.DateTimeField(auto_now=True)
     class Meta:
         abstract=True
+
+class DevBoxCreatedAt(models.Model):
+    date_created = models.DateTimeField(auto_now=True)
+    date_updated = models.DateTimeField(auto_now=True)
+    class Meta:
+        abstract=True
