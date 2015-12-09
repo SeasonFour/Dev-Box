@@ -1,6 +1,12 @@
 /.idea
 db.sqlite3
 shared/config.py
+Register_Developer/migrations/
+Register_Employer/migrations/
+DevBoxLogin/migrations/
 /__pycache__/
-/migrations/
-ig.jpg
+Register_Developer/__pycache__/
+Register_Employer/__pycache__/
+DevBoxLogin/__pycache__/
+shared/__pycache__/
+DevBox/__pycache__/

@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     'crispy_forms',
     'crispy_forms_foundation',
+    'account',
 )
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = ('uni_form', 'foundation-5')
