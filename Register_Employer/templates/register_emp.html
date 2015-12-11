@@ -1,12 +1,15 @@
 {% extends 'Layout.html' %}
 {% load crispy_forms_tags %}
+
 {% block content %}
 
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
+
                 {% csrf_token %}
-                {% crispy Emp_Form %}
+                {% crispy employer_form %}
+
             </div>
         </div>
     </div>

@@ -12,9 +12,8 @@ def emp_home(request):
     emp = Employer.objects.get(id=request.user.id)
     if not emp.first_name:
         employer_form = EmployerForm(instance=emp)
-        context = {'user': request.user, 'Emp_Form': employer_form}
-        return render(request,'register.html',context=context)
-    return render(request,'emp_home.html',context=context)
+        return render(request, 'register_emp.html', context={'user': request.user, 'employer_form': employer_form})
+    return render(request,'emp_home.html', context=context)
 
 
 @login_required(login_url='/emp/accounts/login/')
@@ -25,7 +24,7 @@ def register_employer(request):
         if employer_form.is_valid():
             employer_form.save()
             return redirect('/emp/home/')
-    return render(request,'emp_home.html',context={'Emp_Form': employer_form})
+    return render(request,'emp_home.html',context={'employer_form': employer_form})
 
 
 """
@@ -43,4 +42,5 @@ def save_employer(request):
         emp.pk = request.user.pk
         emp.user_name = request.user.username
         emp.email_address = request.user.email
+        emp.is_employer = True
         emp.save()

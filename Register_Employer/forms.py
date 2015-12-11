@@ -8,7 +8,7 @@ class EmployerForm(ModelForm):
 
     class Meta:
         model = Employer
-        exclude = ('date_created', 'date_updated')
+        exclude = ('date_created', 'date_updated', 'is_employer')
 
     def __init__(self, *args, **kwargs):
         # Init layout form with crispy
