@@ -6,17 +6,36 @@
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'bower_components/foundation/css/foundation.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
-</head>
+
 <body>
+{#<div class="top-bar">#}
+{#    <div class="top-bar-left">#}
+{#        <ul class="dropdown menu" data-dropdown-menu>#}
+{#            <li class="menu-text">Site Title</li>#}
+{#            <li class="has-submenu">#}
+{#                <a href="#">One</a>#}
+{#                <ul class="submenu menu vertical" data-submenu>#}
+{#                    <li><a href="#">One</a></li>#}
+{#                    <li><a href="#">Two</a></li>#}
+{#                    <li><a href="#">Three</a></li>#}
+{#                </ul>#}
+{#            </li>#}
+{#            <li><a href="#">Two</a></li>#}
+{#            <li><a href="#">Three</a></li>#}
+{#        </ul>#}
+{#    </div>#}
+{#</div>#}
+{% block content %}
 
-    {% block content %}
 
-    {% endblock %}
 
-    <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'bower_components/foundation/js/foundation.js' %}"></script>
-    <script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
-    <script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+{% endblock %}
+
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/foundation/js/foundation.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
 </body>
 </html>

@@ -8,7 +8,7 @@ from Register_Developer.models import Developer
 def login(request):
     return render(request,'login.html')
 
-@login_required(login_url='/')
+@login_required(login_url='/dev/')
 def home(request):
     context = RequestContext(request,{'request':request,'user':request.user})
     dev_id = None

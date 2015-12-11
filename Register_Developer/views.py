@@ -6,20 +6,20 @@ from .models import  Developer, Portfolio
 
 # this directs you to the developers profile page i.e. /profile/me
 
-@login_required(login_url='/')
+@login_required(login_url='/dev/')
 def profile(request):
     return render(request,'profile.html')
 
 # this line edits the current user by pre loading their details from github i.e names and email
 
-@login_required(login_url='/')
+@login_required(login_url='/dev/')
 def edit_profile(request):
      dev_profile = Developer.objects.get(id=request.user.pk)
      profile_form = ProfileForm(instance=dev_profile)
      return render(request,'register.html',context= {'profile_form' : profile_form})
 
 
-@login_required(login_url='/')
+@login_required(login_url='/dev/')
 def new_portfolio(request):
     portfolio_form = PortfolioForm
     return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
@@ -27,7 +27,7 @@ def new_portfolio(request):
 # this is where we create the user
 
 
-@login_required(login_url='/')
+@login_required(login_url='/dev/')
 def create_profile(request):
     if request.method == 'POST':
         dev_profile = Developer.objects.get(id=request.user._get_pk_val)
@@ -38,7 +38,7 @@ def create_profile(request):
     return render(request,'register.html',context={'profile_form' : profile_form})
 
 
-@login_required(login_url='/')
+@login_required(login_url='/dev/')
 def create_portfolio(request):
      # dev = Developer.objects.get(pk=request.user._get_pk_val)
      if request.method == 'POST':

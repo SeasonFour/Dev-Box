@@ -39,13 +39,16 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'DevBoxLogin',
     'Register_Developer',
     'Register_Employer',
     'social.apps.django_app.default',
     'crispy_forms',
     'crispy_forms_foundation',
-    'account',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 )
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = ('uni_form', 'foundation-5')
@@ -54,9 +57,17 @@ CRISPY_TEMPLATE_PACK = 'foundation-5'
 AUTHENTICATION_BACKENDS = (
      'social.backends.github.GithubOAuth2',
      'django.contrib.auth.backends.ModelBackend',
+     'allauth.account.auth_backends.AuthenticationBackend',
 )
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SOCIAL_AUTH_GITHUB_FORCE_EMAIL_VALIDATION = True
+
+ACCOUNT_EMAIL_VERIFICATION = ("none")
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/emp/home/'
 
 SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.social_auth.social_details',

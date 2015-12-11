@@ -16,14 +16,15 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 import Register_Developer
-
+from . import views
 import allauth
 admin.autodiscover()
 urlpatterns = [
-
-    url('',include('social.apps.django_app.urls', namespace='social')),
-    url(r'^',include('DevBoxLogin.urls')),
-    url(r'^profile/',include('Register_Developer.urls')),
+    url(r'^$',views.home_page),
+    url('', include('social.apps.django_app.urls', namespace='social')),
+    url(r'^dev/',include('DevBoxLogin.urls')),
+    url(r'^dev/profile/', include('Register_Developer.urls')),
+    url(r'^emp/', include('Register_Employer.urls')),
     url(r'^admin/', include(admin.site.urls)),
 
 ]

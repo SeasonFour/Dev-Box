@@ -10,3 +10,5 @@ Register_Employer/__pycache__/
 DevBoxLogin/__pycache__/
 shared/__pycache__/
 DevBox/__pycache__/
+*.pyc
+*.pyo

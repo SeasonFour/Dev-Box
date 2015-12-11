@@ -473,6 +473,11 @@ button {
 
 .column.row.row, .row.row.columns {
   float: none; }
+  .row .column.row.row, .row .row.row.columns {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; }
 
 .small-1 {
   width: 8.33333%; }
@@ -2383,7 +2388,7 @@ body {
   position: relative;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: auto; }
 
 .off-canvas-wrapper-inner {
   position: relative;
@@ -2996,7 +3001,9 @@ table.hover tr:nth-of-type(even):hover {
     line-height: 1;
     font-size: 12px;
     color: #2199e8; }
-    .tabs-title > a:hover, .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    .tabs-title > a:hover {
+      background: #fefefe; }
+    .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
       background: #e6e6e6; }
 
 .tabs-content {

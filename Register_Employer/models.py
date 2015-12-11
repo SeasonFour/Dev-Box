@@ -4,7 +4,7 @@ from shared.DevBoxUser import DevBoxUser,DevBoxCreatedAt
 class Employer(DevBoxUser):
     company_name = models.CharField(max_length=50,blank=True)
     location = models.CharField(max_length=50,blank=True)
-    is_confirmed = models.BooleanField(default=False)
+    is_employer = models.BooleanField(default=False)
 
 class JobPost(DevBoxCreatedAt):
     title = models.CharField(max_length=50,blank=False)
