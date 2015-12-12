@@ -22,6 +22,7 @@ def home(request):
         dev.first_name = request.user.first_name
         dev.last_name = request.user.last_name
         dev.email_address = request.user.email
+        dev.is_developer = True
         dev.save()
     return render_to_response('home.html',context_instance=context)
 

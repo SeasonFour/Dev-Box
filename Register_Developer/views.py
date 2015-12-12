@@ -18,7 +18,6 @@ def edit_profile(request):
      profile_form = ProfileForm(instance=dev_profile)
      return render(request,'register.html',context= {'profile_form' : profile_form})
 
-
 @login_required(login_url='/dev/')
 def new_portfolio(request):
     portfolio_form = PortfolioForm
@@ -50,3 +49,4 @@ def create_portfolio(request):
              portfolio_form.save_m2m()
              return redirect('/profile/me/')
      return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
+
