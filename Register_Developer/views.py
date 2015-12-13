@@ -6,6 +6,8 @@ from .models import  Developer, Portfolio
 
 # this directs you to the developers profile page i.e. /profile/me
 
+
+
 @login_required(login_url='/dev/')
 def profile(request):
     return render(request,'profile.html')

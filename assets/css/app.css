@@ -5,31 +5,48 @@
 .reset_btn{
     margin-left: 1%;
 }
+header{
+    border-bottom: 12px;
+}
 header.nav{
-    background: #000;
-    height: 20%;
-    padding-top: 6%;
+    background: palegreen;
+    color: #000;
+    height: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.link{
+    font-size: xx-large;
+    color: #0a0a0a;
 }
 .page-content{
     display: block;
     /*text-align: center;*/
 }
-
-.demo-avatar{
+.demo-icon{
     height: 50px;
     width: 50px;
+    margin-top: 0;
+    margin-bottom: 15%;
+}
+.demo-avatar{
     border-radius: 50%;
+    height: 70px;
+    width: 70px;
 }
 #accbtn{
     height: 60px;
     width: 60px;
-    margin-top: 0.2%;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 }
 
 .menu{
    position: absolute;
     left: 12px;
+}
+.mdl-layout--right{
+    display: block;
+    float: right;
 }
 
 

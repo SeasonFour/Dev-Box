@@ -1,7 +1,7 @@
 from django.forms import ModelForm
 from crispy_forms_foundation.forms import *
 from crispy_forms_foundation.layout import Layout,Field, Fieldset,Reset,SplitDateTimeField, Row, Column, ButtonHolder, Submit
-from Register_Employer.models import Employer
+from Register_Employer.models import Employer,JobPost
 from django.utils.translation import ugettext as _
 
 class EmployerForm(ModelForm):
@@ -31,3 +31,29 @@ class EmployerForm(ModelForm):
             ),
         )
         super(EmployerForm, self).__init__(*args, **kwargs)
+
+
+class JobForm(ModelForm):
+
+    class Meta:
+        model = JobPost
+        exclude = ('date_created', 'date_updated','employer')
+
+    def __init__(self, *args, **kwargs):
+        # Init layout form with crispy
+        self.helper = FormHelper()
+        self.helper.attrs = {'data_abide': ''}
+        self.helper.form_action ='/emp/create/'
+        self.helper.form_method = 'POST'
+        self.helper.form_show_labels = True
+        self.helper.layout = Layout(
+            Field('title',placeholder="title of the job"),
+            Field('description',placeholder="the scope of the job"),
+            Field('skills_required',placeholder="programming knowledge separated with commas,e.g HTML,CSS,JS"),
+            Field('location',placeholder="where the job is at"),
+            ButtonHolder(
+                Submit('submit', _('Register'),css_class='save_btn'),
+                Reset('reset',_('Reset'),css_class='reset_btn')
+            ),
+        )
+        super(JobForm, self).__init__(*args, **kwargs)

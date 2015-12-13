@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'bower_components/foundation/css/foundation.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
 
@@ -14,12 +15,21 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="custom-header mdl-layout__header mdl-layout__header--waterfall nav">
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">DEV-BOX</span>
+            <span class="mdl-layout-title">
+                <img src="{% static 'img/devbox-logo.png' %}" class="demo-icon">
+            </span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">
+                    <span class="link">
+                        <i class="fa fa-pencil-square-o"></i>
+                    </span>
+                </a>
+                <a class="mdl-navigation__link" href="">
+                    <span class="link">
+                       <i class="fa fa-github-square"></i>
+                    </span>
+                </a>
 {#                <a class="mdl-navigation__link" href="">Link</a>#}
                 <div class="mdl_layout__drawer">
                     <div class="mdl-grid img-click">
