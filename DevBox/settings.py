@@ -24,16 +24,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
 
 import os
-
-SOCIAL_AUTH_GITHUB_KEY = '053534ccf0c3b522abf0'
-
-SOCIAL_AUTH_GITHUB_SECRET = '2a467b68c9da96f471caac9f89fd708e8942ae1f'
-
-SOCIAL_AUTH_LOGIN_URL = '/dev/'
-
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/dev/home/'
-
-ACCOUNT_ACTIVATION_DAYS = 7
+from shared.config import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
