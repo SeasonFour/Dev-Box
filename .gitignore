@@ -1,8 +1,5 @@
 /.idea
 db.sqlite3
-Register_Developer/migrations/
-Register_Employer/migrations/
-DevBoxLogin/migrations/
 /__pycache__/
 Register_Developer/__pycache__/
 Register_Employer/__pycache__/
