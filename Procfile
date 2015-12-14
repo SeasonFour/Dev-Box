@@ -1,2 +1,2 @@
 
-python Dev-Box/manage.py runserver 0.0.0.0:$PORT
+web: gunicorn DevBox.wsgi -b 0.0.0.0:$PORT
