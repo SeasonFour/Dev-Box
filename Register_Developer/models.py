@@ -37,6 +37,7 @@ class Portfolio(models.Model):
     image = models.ImageField(blank=True)
     description = models.TextField()
     github_link = models.URLField()
+    upvotes = models.IntegerField(blank=True,default=0)
     owner = models.ForeignKey(Developer)
     date_created = models.DateTimeField(auto_now=True)
     date_updated = models.DateTimeField(auto_now=True)
