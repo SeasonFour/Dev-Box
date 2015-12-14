@@ -1,5 +1,4 @@
 /.idea
-db.sqlite3
 /__pycache__/
 Register_Developer/__pycache__/
 Register_Employer/__pycache__/
