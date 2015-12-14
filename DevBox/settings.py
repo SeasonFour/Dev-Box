@@ -25,7 +25,7 @@ ALLOWED_HOSTS = ['*']
 
 import os
 
-from shared.my-config import *
+from shared.my_config import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
