@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import MinValueValidator,MaxValueValidator
-from shared.DevBoxUser import DevBoxUser
+from DevBox.DevBoxUser import DevBoxUser
 #Create your models here.
 """this is the model that contains details about the developer"""
 class Developer(DevBoxUser):
