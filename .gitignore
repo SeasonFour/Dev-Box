@@ -1,6 +1,5 @@
 /.idea
 db.sqlite3
-/shared/config.py
 Register_Developer/migrations/
 Register_Employer/migrations/
 DevBoxLogin/migrations/

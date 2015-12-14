@@ -1,5 +1,5 @@
 from django.db import models
-from DevBox.DevBoxUser import DevBoxUser,DevBoxCreatedAt
+from shared.DevBoxUser import DevBoxUser,DevBoxCreatedAt
 # Create your models here.
 class Employer(DevBoxUser):
     company_name = models.CharField(max_length=50,blank=True)
