@@ -12,3 +12,4 @@ shared/__pycache__/
 DevBox/__pycache__/
 *.pyc
 *.pyo
+/venv/
