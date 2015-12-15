@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
 
 
@@ -21,22 +20,17 @@
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
                 <a class="mdl-navigation__link" href="">
-                    <span class="link">
-                        <i class="fa fa-pencil-square-o"></i>
-                    </span>
+                  <i class="fa fa-user-plus fa-2x"></i>
                 </a>
                 <a class="mdl-navigation__link" href="">
-                    <span class="link">
-                       <i class="fa fa-github-square"></i>
-                    </span>
+                   <i class="fa fa-github fa-2x"></i>
                 </a>
-{#                <a class="mdl-navigation__link" href="">Link</a>#}
-                <div class="mdl_layout__drawer">
+
+                <!--<div class="mdl_layout__drawer">
                     <div class="mdl-grid img-click">
                         <div class="mdl-cell mdl-cell--12-col">
                              <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                                 <img src="{% static 'img/avatar.jpg' %}" class="demo-avatar">
-{#                                <i class="material-icons" role="presentation">arrow_drop_down</i>#}
                                 <span class="visuallyhidden">Accounts</span>
                             </button>
                              <ul class="menu mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
@@ -45,7 +39,7 @@
                              </ul>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </nav>
         </div>
     </header>
@@ -60,16 +54,47 @@
     </div>
     <main class="mdl-layout__content">
         <div class="page-content">
-
-            {% block content %}
-
-
-
-            {% endblock %}
-
         </div>
     </main>
+    {% block content %}
+
+
+    {% endblock %}
+
+    <footer>
+          <div class="row foot">
+              <div class="large-12">
+                  <div class="large-6 medium-6 small-6 columns">
+                      <h4>COMPANY INFO</h4>
+                          <ul class="info">
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Terms of service</a></li>
+                              <li><a href="#">Privacy and Policy</a></li>
+                          </ul>
+                  </div>
+                  <div class="large-6 medium-6 small-6 columns">
+                      <h4>CONNECT WITH US</h4>
+                          <ul class="connect">
+                              <li><a href="#">Contact support</a></li>
+                              <li><a href="#">Help</a></li>
+                              <li><a href="#">FAQ</a></li>
+                          </ul>
+                  </div>
+                  <div class="large-12 columns">
+                      <h4>Social reach</h4>
+                          <ul class="social">
+                              <li><a href="#"><img src="img/social/googleplus.png"/></a></li>
+                              <li><a href="#"><img src="img/social/facebook.png"/></a></li>
+                              <li><a href="#"><img src="img/social/twitter.png"/></a></li>
+                          </ul>
+                  </div>
+              </div>
+
+          </div>
+
+        </footer>
 </div>
+
 <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
 <script type="text/javascript" src="{% static 'bower_components/foundation/js/foundation.js' %}"></script>
 <script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>

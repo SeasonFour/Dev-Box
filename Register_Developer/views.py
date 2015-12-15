@@ -51,4 +51,3 @@ def create_portfolio(request):
              portfolio_form.save_m2m()
              return redirect('/profile/me/')
      return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
-

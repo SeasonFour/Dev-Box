@@ -21,6 +21,7 @@ import allauth
 admin.autodiscover()
 urlpatterns = [
     url(r'^$',views.home_page),
+    url(r'^start/$',views.get_started),
     url('', include('social.apps.django_app.urls', namespace='social')),
     url(r'^dev/',include('DevBoxLogin.urls')),
     url(r'^dev/profile/', include('Register_Developer.urls')),
