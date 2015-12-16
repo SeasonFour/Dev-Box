@@ -1,5 +1,5 @@
 from django.conf.urls import include, url
-from . import views
+from Register_Developer import views
 urlpatterns = [
     url(r'me/',views.profile),
 

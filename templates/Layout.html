@@ -1,0 +1,90 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevBox</title>
+    <link rel="stylesheet" href="{% static 'bower_components/foundation/css/foundation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+<body>
+
+  <header>
+  <div class="row">
+      <!--Image-->
+      <div class="large-2 medium-2 small-2 columns">
+        <img src="{% static 'img/devbox-logo.png' %}" height="80" width ="80">
+      </div>
+      <!--Links-->
+      <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li ><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header><!--end of header-->
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    <footer>
+          <div class="row foot">
+              <div class="large-12">
+                  <div class="large-6 medium-6 small-6 columns">
+                      <h4>COMPANY INFO</h4>
+                          <ul class="info">
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Terms of service</a></li>
+                              <li><a href="#">Privacy and Policy</a></li>
+                          </ul>
+                  </div>
+                  <div class="large-6 medium-6 small-6 columns">
+                      <h4>CONNECT WITH US</h4>
+                          <ul class="connect">
+                              <li><a href="#">Contact support</a></li>
+                              <li><a href="#">Help</a></li>
+                              <li><a href="#">FAQ</a></li>
+                          </ul>
+                  </div>
+                  <div class="large-12 columns">
+                      <h4>Social reach</h4>
+                          <ul class="social">
+                              <li><a href="#"><img src="img/social/googleplus.png"/></a></li>
+                              <li><a href="#"><img src="img/social/facebook.png"/></a></li>
+                              <li><a href="#"><img src="img/social/twitter.png"/></a></li>
+                          </ul>
+                  </div>
+              </div>
+
+          </div>
+
+        </footer>
+</div>
+
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/foundation/js/foundation.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+<script type="text/javascript">
+     $('#toggle').click(function() {
+       $(this).toggleClass('active');
+ $('#overlay').toggleClass('open');
+});
+  </script>
+
+</body>
+</html>

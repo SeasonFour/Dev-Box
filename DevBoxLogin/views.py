@@ -4,7 +4,9 @@ from django.contrib.auth.decorators import login_required
 from Register_Developer.models import Developer
 # Create your views here.
 
-
+def get_started(request):
+    return render(request,'get_started.html')
+    
 def login(request):
     return render(request,'login.html')
 

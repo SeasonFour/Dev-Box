@@ -1,7 +1,18 @@
 from django.db import models
 from django.core.validators import MinValueValidator,MaxValueValidator
-from shared.DevBoxUser import DevBoxUser
 #Create your models here.
+
+from django.db import models
+class DevBoxUser(models.Model):
+    user_name = models.CharField(max_length=50,blank=True)
+    first_name = models.CharField(max_length=50,blank=False)
+    last_name = models.CharField(max_length=50,blank=False)
+    email_address = models.EmailField(max_length=50,blank=False)
+    date_created = models.DateTimeField(auto_now=True)
+    date_updated = models.DateTimeField(auto_now=True)
+    class Meta:
+        abstract=True
+
 """this is the model that contains details about the developer"""
 class Developer(DevBoxUser):
     bio = models.TextField(verbose_name="About You",max_length=500)
@@ -23,9 +34,10 @@ class Developer(DevBoxUser):
     in relation to the developer"""
 class Portfolio(models.Model):
     title = models.CharField(max_length=50,blank=False)
-    image = models.ImageField(blank=True)
+    image = models.ImageField(blank=True,upload_to='media')
     description = models.TextField()
     github_link = models.URLField()
+    #upvotes = models.IntegerField(default=0)
     owner = models.ForeignKey(Developer)
     date_created = models.DateTimeField(auto_now=True)
     date_updated = models.DateTimeField(auto_now=True)

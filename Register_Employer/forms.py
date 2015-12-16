@@ -43,7 +43,7 @@ class JobForm(ModelForm):
         # Init layout form with crispy
         self.helper = FormHelper()
         self.helper.attrs = {'data_abide': ''}
-        self.helper.form_action ='/emp/create/'
+        self.helper.form_action ='/emp/job/create/'
         self.helper.form_method = 'POST'
         self.helper.form_show_labels = True
         self.helper.layout = Layout(

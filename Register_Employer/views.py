@@ -1,7 +1,7 @@
 from django.shortcuts import render, RequestContext,redirect
 from django.contrib.auth.decorators import login_required
 from Register_Employer.models import Employer
-from Register_Employer.forms import EmployerForm
+from Register_Employer.forms import EmployerForm,JobForm
 # Create your views here.
 
 
@@ -31,6 +31,7 @@ def register_employer(request):
 this method checks whether an employer exists in the model,
 if None exists then the Employers id, username & email are saved.
 """
+@login_required(login_url='/emp/accounts/login/')
 def save_employer(request):
     emp_id = None
     try:
@@ -44,3 +45,17 @@ def save_employer(request):
         emp.email_address = request.user.email
         emp.is_employer = True
         emp.save()
+
+@login_required(login_url='/emp/accounts/login/')
+def show_job_form(request):
+    job_form = JobForm(request.POST or None)
+    return render(request,'post_job.html',context={'job_form': job_form})
+
+@login_required(login_url='/emp/accounts/login/')
+def post_job(request):
+    job_form = JobForm(request.POST or None)
+    if request.method == 'POST':
+        if job_form.is_valid():
+            job_form.save()
+            redirect('/emp/home/')
+    return render(request,'post_job.html',context={ 'job_form': job_form })

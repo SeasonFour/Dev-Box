@@ -1,9 +1,4 @@
 /.idea
-db.sqlite3
-shared/config.py
-Register_Developer/migrations/
-Register_Employer/migrations/
-DevBoxLogin/migrations/
 /__pycache__/
 Register_Developer/__pycache__/
 Register_Employer/__pycache__/
@@ -12,3 +7,4 @@ shared/__pycache__/
 DevBox/__pycache__/
 *.pyc
 *.pyo
+/venv/

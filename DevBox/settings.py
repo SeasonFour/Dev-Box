@@ -11,13 +11,31 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
 
-from shared.config import *
+import dj_database_url
+DATABASES = {}
+DATABASES['default'] =  dj_database_url.config()
+DATABASES['default']['CONN_MAX_AGE'] = 500
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
+import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+SOCIAL_AUTH_GITHUB_KEY = '053534ccf0c3b522abf0'
 
+SOCIAL_AUTH_GITHUB_SECRET = '2a467b68c9da96f471caac9f89fd708e8942ae1f'
+
+SOCIAL_AUTH_LOGIN_URL = '/dev/'
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/dev/home/'
+
+ACCOUNT_ACTIVATION_DAYS = 7
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -142,9 +160,9 @@ DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #         'NAME': 'devbox',
-#         'USER': 'postgres',
+#         'USER': 'job',
 #         'PASSWORD': '',
-#         'HOST': '127.0.0.1',
+#         'HOST': '',
 #         'PORT': '',
 #     }
 # }
@@ -165,8 +183,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'../media_root')
+MEDIA_URL = '/media/'
