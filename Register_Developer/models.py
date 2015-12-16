@@ -34,10 +34,10 @@ class Developer(DevBoxUser):
     in relation to the developer"""
 class Portfolio(models.Model):
     title = models.CharField(max_length=50,blank=False)
-    image = models.ImageField(blank=True)
+    image = models.ImageField(blank=True,upload_to='media')
     description = models.TextField()
     github_link = models.URLField()
-    upvotes = models.IntegerField(blank=True,default=0)
+    #upvotes = models.IntegerField(default=0)
     owner = models.ForeignKey(Developer)
     date_created = models.DateTimeField(auto_now=True)
     date_updated = models.DateTimeField(auto_now=True)

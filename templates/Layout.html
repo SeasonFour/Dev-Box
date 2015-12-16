@@ -3,59 +3,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DevBox</title>
     <link rel="stylesheet" href="{% static 'bower_components/foundation/css/foundation.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.teal-cyan.min.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <body>
 
-
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="custom-header mdl-layout__header mdl-layout__header--waterfall nav">
-        <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">
-                <img src="{% static 'img/devbox-logo.png' %}" class="demo-icon">
-            </span>
-            <div class="mdl-layout-spacer"></div>
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="">
-                  <i class="fa fa-user-plus fa-2x"></i>
-                </a>
-                <a class="mdl-navigation__link" href="">
-                   <i class="fa fa-github fa-2x"></i>
-                </a>
-
-                <!--<div class="mdl_layout__drawer">
-                    <div class="mdl-grid img-click">
-                        <div class="mdl-cell mdl-cell--12-col">
-                             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                                <img src="{% static 'img/avatar.jpg' %}" class="demo-avatar">
-                                <span class="visuallyhidden">Accounts</span>
-                            </button>
-                             <ul class="menu mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-                                 <li class="mdl-menu__item">Logout</li>
-                                 <li class="mdl-menu__item">account</li>
-                             </ul>
-                        </div>
-                    </div>
-                </div>-->
-            </nav>
-        </div>
-    </header>
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-        <span class="mdl-layout-title">Sidebar Menu</span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
+  <header>
+  <div class="row">
+      <!--Image-->
+      <div class="large-2 medium-2 small-2 columns">
+        <img src="{% static 'img/devbox-logo.png' %}" height="80" width ="80">
+      </div>
+      <!--Links-->
+      <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
     </div>
-    <main class="mdl-layout__content">
-        <div class="page-content">
-        </div>
-    </main>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li ><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header><!--end of header-->
+
     {% block content %}
 
 
@@ -100,7 +78,13 @@
 <script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
 <script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+
+<script type="text/javascript">
+     $('#toggle').click(function() {
+       $(this).toggleClass('active');
+ $('#overlay').toggleClass('open');
+});
+  </script>
 
 </body>
 </html>

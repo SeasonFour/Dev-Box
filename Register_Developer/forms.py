@@ -15,7 +15,7 @@ class ProfileForm(ModelForm):
         # Init layout form with crispy
         self.helper = FormHelper()
         self.helper.attrs = {'data_abide': ''}
-        self.helper.form_action ='/profile/create/'
+        self.helper.form_action ='/dev/profile/create/'
         self.helper.form_method = 'POST'
         self.helper.form_show_labels = True
         self.helper.layout = Layout(
@@ -50,7 +50,7 @@ class PortfolioForm(ModelForm):
         # Init layout form with crispy
         self.helper = FormHelper()
         self.helper.attrs = {'data_abide': ''}
-        self.helper.form_action ='/profile/create/portfolio/'
+        self.helper.form_action ='/dev/profile/create/portfolio/'
         self.helper.form_method = 'POST'
         self.helper.form_show_labels = True
         self.helper.layout = Layout(

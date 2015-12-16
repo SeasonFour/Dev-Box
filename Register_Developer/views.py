@@ -2,6 +2,8 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from .forms  import ProfileForm, PortfolioForm
 from .models import  Developer, Portfolio
+# from azure.blob.storage import BlobService
+# from Register_Developer.blob_data import *
 # Create your views here.
 
 # this directs you to the developers profile page i.e. /profile/me
@@ -35,19 +37,25 @@ def create_profile(request):
         profile_form = ProfileForm(request.POST or None,instance=dev_profile)
         if profile_form.is_valid():
            profile_form.save()
-           return redirect('/profile/me/')
+           return redirect('/dev/profile/me/')
     return render(request,'register.html',context={'profile_form' : profile_form})
 
 
 @login_required(login_url='/dev/')
 def create_portfolio(request):
      # dev = Developer.objects.get(pk=request.user._get_pk_val)
+     portfolio_form = PortfolioForm(request.POST, request.FILES)
      if request.method == 'POST':
-         portfolio_form = PortfolioForm(request.POST,request.FILES)
          if portfolio_form.is_valid():
              portfolio = portfolio_form.save(commit=False)
              portfolio.owner_id = request.user.id
              portfolio.save()
+             #upload_portfolio_image()
              portfolio_form.save_m2m()
-             return redirect('/profile/me/')
+             return redirect('/dev/profile/me/')
      return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
+
+#uploading portfolios to azure
+# def upload_portfolio_image(path):
+#     blob = BlobService(account_name=ACCOUNT_NAME,account_key=ACCOUNT_KEY)
+#     blob.put_block_blob_from_path('images',BLOB_NAME,path,x_ms_blob_content_type='{}{}{}'.format('image','/','png')

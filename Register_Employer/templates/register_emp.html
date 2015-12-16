@@ -2,16 +2,12 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-
-                {% csrf_token %}
-                {% crispy employer_form %}
-
-            </div>
-        </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="large-12 small-12 columns reg">
+      {% csrf_token %}
+      {% crispy employer_form %}
     </div>
-
+  </div>
 {% endblock %}

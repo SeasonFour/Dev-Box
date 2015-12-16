@@ -6,6 +6,7 @@ from Register_Developer.models import Developer
 
 def get_started(request):
     return render(request,'get_started.html')
+    
 def login(request):
     return render(request,'login.html')
 
