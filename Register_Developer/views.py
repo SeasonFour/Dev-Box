@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, RequestContext
 from django.contrib.auth.decorators import login_required
 from .forms  import ProfileForm, PortfolioForm
 from .models import  Developer, Portfolio
@@ -12,8 +12,11 @@ from .models import  Developer, Portfolio
 
 @login_required(login_url='/dev/')
 def profile(request):
+    developer = Developer.objects.filter(id=request.user.id)
     portfolio = Portfolio.objects.filter(owner_id=request.user.id)
-    return render(request, 'profile.html', context={ 'portfolio': portfolio })
+    context = RequestContext(request,{'developer': developer,'portfolio': portfolio})
+    print(developer,portfolio)
+    return render(request, 'profile.html',context= context)
 
 # this line edits the current user by pre loading their details from github i.e names and email
 
@@ -54,7 +57,8 @@ def create_portfolio(request):
              #upload_portfolio_image()
              portfolio_form.save_m2m()
              portfolio = Portfolio.objects.get(owner_id=request.user.id)
-             developer = Developer.objects.get(pk=request.user.pk)
+             developer = Developer.objects.get(id=request.user.id)
+             print(developer.first_name)
              return redirect('/dev/profile/me/', context={ portfolio: 'portfolio',developer: 'developer'})
      return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
 
