@@ -1,5 +1,5 @@
 
-/*.spaced{
+.spaced{
     margin: 2%;
 }
 .reset_btn{
@@ -44,15 +44,11 @@ header.nav{
 .menu{
   z-index: 100;
 }
-.mdl-layout--right{
+.reg{
     display: block;
-    float: right;
 }
 
-.cont-box{
-  display: block;
-  text-align: center;
-}*/
+
 
 //bills CSS
 body{
