@@ -54,7 +54,8 @@ def create_portfolio(request):
              #upload_portfolio_image()
              portfolio_form.save_m2m()
              portfolio = Portfolio.objects.get(owner_id=request.user.id)
-             return redirect('/dev/profile/me/', context={ portfolio : 'portfolio' })
+             developer = Developer.objects.get(pk=request.user.pk)
+             return redirect('/dev/profile/me/', context={ portfolio: 'portfolio',developer: 'developer'})
      return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
 
 #uploading portfolios to azure
