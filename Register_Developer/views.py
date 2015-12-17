@@ -12,7 +12,8 @@ from .models import  Developer, Portfolio
 
 @login_required(login_url='/dev/')
 def profile(request):
-    return render(request,'profile.html')
+    portfolio = Portfolio.objects.filter(owner_id=request.user.id)
+    return render(request, 'profile.html', context={ 'portfolio': portfolio })
 
 # this line edits the current user by pre loading their details from github i.e names and email
 
@@ -20,12 +21,12 @@ def profile(request):
 def edit_profile(request):
      dev_profile = Developer.objects.get(id=request.user.pk)
      profile_form = ProfileForm(instance=dev_profile)
-     return render(request,'register.html',context= {'profile_form' : profile_form})
+     return render(request,'register.html',context= {'profile_form': profile_form})
 
 @login_required(login_url='/dev/')
 def new_portfolio(request):
     portfolio_form = PortfolioForm
-    return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
+    return render(request,'register_portfolio.html',context= {'portfolio_form': portfolio_form})
 
 # this is where we create the user
 
@@ -52,7 +53,8 @@ def create_portfolio(request):
              portfolio.save()
              #upload_portfolio_image()
              portfolio_form.save_m2m()
-             return redirect('/dev/profile/me/')
+             portfolio = Portfolio.objects.get(owner_id=request.user.id)
+             return redirect('/dev/profile/me/', context={ portfolio : 'portfolio' })
      return render(request,'register_portfolio.html',context= {'portfolio_form' : portfolio_form})
 
 #uploading portfolios to azure

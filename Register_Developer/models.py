@@ -34,7 +34,7 @@ class Developer(DevBoxUser):
     in relation to the developer"""
 class Portfolio(models.Model):
     title = models.CharField(max_length=50,blank=False)
-    image = models.ImageField(blank=True,upload_to='media')
+    image = models.ImageField(blank=True,upload_to='portfolios')
     description = models.TextField()
     github_link = models.URLField()
     #upvotes = models.IntegerField(default=0)

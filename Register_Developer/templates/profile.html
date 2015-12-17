@@ -21,49 +21,27 @@
                     <p>Bio of the developer goes here</p>
                 </div>
             </div>
-            <div class="row profiles">
 
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="card">
-                            <div class="project-title">
-                                <h5>PROJECT NAME</h5>
-                            </div>
-                            <div class="project-image">
-                                <img src="img/devBox-logo.png">
-                            </div>
-                            <div class="project-description">
-                                <p>Project described here</p>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="large-4 medium-4 small-4 columns">
-                        <div class="card">
-                            <div class="project-title">
-                                <h5>PROJECT NAME</h5>
-                            </div>
-                            <div class="project-image">
-                                <img src="img/devBox-logo.png">
-                            </div>
-                            <div class="project-description">
-                                <p>Project described here</p>
+            {% if portfolio %}
+                {% for item in portfolio %}
+                    <div class="row profiles">
+                        <div class="large-4 medium-4 small-4 columns">
+                            <div class="card">
+                                <div class="project-title">
+                                    <h5>{{ item.title }}</h5>
+                                </div>
+                                <div class="project-image">
+                                    <img src="/media/{{ item.image }}" alt="{{ item.image }}">
+                                </div>
+                                <div class="project-description">
+                                    <p>{{ item.description }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                  <div class="large-4 medium-4 small-4 columns">
-                        <div class="card">
-                            <div class="project-title">
-                                <h5>PROJECT NAME</h5>
-                            </div>
-                            <div class="project-image">
-                                <img src="img/devBox-logo.png">
-                            </div>
-                            <div class="project-description">
-                                <p>Project described here</p>
-                            </div>
-                        </div>
-                    </div>
+                {% endfor %}
+            {% endif %}
 
-            </div>
         </div>
     </div>
     <br>

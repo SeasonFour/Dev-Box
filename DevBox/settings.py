@@ -189,5 +189,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'../media_root')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+ADMIN_MEDIA_PREFIX = '/media/'

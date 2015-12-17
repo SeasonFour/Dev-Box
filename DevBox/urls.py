@@ -13,19 +13,22 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import include, url
+from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 import Register_Developer
 from . import views
-import allauth
 admin.autodiscover()
-urlpatterns = [
-    url(r'^$',views.home_page),
-    url(r'^start/$',views.get_started),
-    url('', include('social.apps.django_app.urls', namespace='social')),
-    url(r'^dev/',include('DevBoxLogin.urls')),
-    url(r'^dev/profile/', include('Register_Developer.urls')),
-    url(r'^emp/', include('Register_Employer.urls')),
-    url(r'^admin/', include(admin.site.urls)),
 
-]
+urlpatterns = patterns('',
+
+    (r'^$',views.home_page),
+    (r'^start/$',views.get_started),
+    ('', include('social.apps.django_app.urls', namespace='social')),
+    (r'^dev/',include('DevBoxLogin.urls')),
+    (r'^dev/profile/', include('Register_Developer.urls')),
+    (r'^emp/', include('Register_Employer.urls')),
+    (r'^admin/', include(admin.site.urls)),
+
+) + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
