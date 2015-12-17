@@ -1,5 +1,5 @@
 
-.spaced{
+/*.spaced{
     margin: 2%;
 }
 .reset_btn{
@@ -22,7 +22,7 @@ header.nav{
 }
 .page-content{
     display: block;
-    /*text-align: center;*/
+    text-align: center;
 }
 .demo-icon{
     height: 50px;
@@ -52,7 +52,8 @@ header.nav{
 .cont-box{
   display: block;
   text-align: center;
-}
+}*/
+
 //bills CSS
 body{
     height: 100%;
@@ -99,7 +100,7 @@ header  ul li a{
 footer{
     height: auto;
     text-align: center;
-    color: #fff;
+    color: white;
     background: #263238;
     margin-bottom: 0;
 }

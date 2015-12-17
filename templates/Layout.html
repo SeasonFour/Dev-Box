@@ -7,85 +7,84 @@
     <link rel="stylesheet" href="{% static 'bower_components/foundation/css/foundation.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     <link rel="stylesheet" href="{% static 'css/nav.css' %}">
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <body>
+      {%if user.is_authenticated %}
+        <header>
+          <div class="row">
+              <!--Image-->
+              <div class="large-2 medium-4 small-2 columns">
+                <img src="{% static 'img/devbox-logo.png' %}" height="50" width ="50" style="padding-top:12%">
+              </div>
+              <!--Links-->
+              <div class="large-4 medium-4 small-4 columns large-push-2">
+                <ul>
+                    <li><a href=""><i class="fa fa-sign-out fa-1x"></i> &nbsp;Sign Out</a></li>
 
-  <header>
-  <div class="row">
-      <!--Image-->
-      <div class="large-2 medium-2 small-2 columns">
-        <img src="{% static 'img/devbox-logo.png' %}" height="80" width ="80">
-      </div>
-      <!--Links-->
-      <div class="button_container" id="toggle">
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>
-    </div>
-
-    <div class="overlay" id="overlay">
-      <nav class="overlay-menu">
-        <ul>
-          <li ><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header><!--end of header-->
+                </ul>
+              </div>
+          </div>
+        </header>
+      {% else %}
+        <header>
+          <div class="row">
+            <!--Image-->
+              <div class="large-2 medium-4 small-2 columns">
+                <img src="{% static 'img/devbox-logo.png' %}" height="50" width ="50" style="padding-top:12%">
+              </div>
+            <!--Links-->
+              <div class="large-4 medium-4 small-4 columns large-push-2">
+                <ul>
+                  <li><a href=""><i class="fa fa-user-plus fa-1x"></i> &nbsp;Sign up</a></li>
+                  <li><a href="#"><i class="fa fa-sign-in fa-1x"></i> &nbsp;Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+      {% endif %}
 
     {% block content %}
 
 
     {% endblock %}
 
-    <footer>
-          <div class="row foot">
-              <div class="large-12">
-                  <div class="large-6 medium-6 small-6 columns">
-                      <h4>COMPANY INFO</h4>
-                          <ul class="info">
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Terms of service</a></li>
-                              <li><a href="#">Privacy and Policy</a></li>
-                          </ul>
-                  </div>
-                  <div class="large-6 medium-6 small-6 columns">
-                      <h4>CONNECT WITH US</h4>
-                          <ul class="connect">
-                              <li><a href="#">Contact support</a></li>
-                              <li><a href="#">Help</a></li>
-                              <li><a href="#">FAQ</a></li>
-                          </ul>
-                  </div>
-                  <div class="large-12 columns">
-                      <h4>Social reach</h4>
-                          <ul class="social">
-                              <li><a href="#"><img src="img/social/googleplus.png"/></a></li>
-                              <li><a href="#"><img src="img/social/facebook.png"/></a></li>
-                              <li><a href="#"><img src="img/social/twitter.png"/></a></li>
-                          </ul>
-                  </div>
+    <footer >
+      <div class="row foot">
+        <div class="large-12">
+          <div class="large-6 medium-6 small-6 columns">
+            <h4 style="color:#fff">COMPANY INFO</h4>
+              <ul class="info">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy and Policy</a></li>
+              </ul>
               </div>
-
+              <div class="large-6 medium-6 small-6 columns">
+                <h4 style="color:#fff">CONNECT WITH US</h4>
+                  <ul class="connect">
+                    <li><a href="#">Contact support</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="large-12 columns">
+                  <h4 style="color:#fff">SOCIAL REACH</h4>
+                  <ul class="social">
+                    <li><a href="#"><img src="img/social/googleplus.png"/></a></li>
+                    <li><a href="#"><img src="img/social/facebook.png"/></a></li>
+                    <li><a href="#"><img src="img/social/twitter.png"/></a></li>
+                  </ul>
+                </div>
+              </div>
           </div>
-
         </footer>
-</div>
+      </div>
 
-<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/foundation/js/foundation.js' %}"></script>
-<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
-<script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bower_components/foundation/js/foundation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
+    <script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
 
-<script type="text/javascript">
-     $('#toggle').click(function() {
-       $(this).toggleClass('active');
- $('#overlay').toggleClass('open');
-});
-  </script>
-
-</body>
+  </body>
 </html>

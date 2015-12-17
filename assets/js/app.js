@@ -9,4 +9,9 @@ $(function () {
             removePlugins : 'elementspath'
         }
     );
+    
+    $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    });
 });
