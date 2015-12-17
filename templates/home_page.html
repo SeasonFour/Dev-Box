@@ -1,4 +1,6 @@
 {% extends 'Layout.html' %}
+{% load static from staticfiles %}
+
 
 {% block content %}
 <section id="intro">
@@ -21,15 +23,16 @@
                       <p>Get the people you need fast.</p>
                       <div class="row">
                         <div class="large-4 columns">
-                            <span>Search</span><br> <img src="img/analys64.png"/><br>
+                            <span>Search</span><br><img src="{% static 'img/analys64.png' %}"/><br>
                             <p>Search for developers. </p>
                         </div>
                         <div class="large-4 columns">
-                          <span>Connect</span><br><img src="img/stick%20man161-64.png"/><br>
+                          <span>Connect</span><br><img src="{% static 'img/stick%20man161-64.png' %}"/><br>
                             <p>Connect with developers by viewing their profiles.</p>
                         </div>
                         <div class="large-4 columns">
-                          <span>Develop</span><br><img src="img/develop64.png"/><br>
+
+                          <span>Develop</span><br><img src="{% static 'img/develop64.png' %}"/><br>
                             <p>Start developing your amazing products.</p>
                         </div>
                       </div>
